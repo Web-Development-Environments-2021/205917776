@@ -126,11 +126,10 @@
   }
   .container #btnlike{
 	width: 63%;
-	height: 10vw;
+	height: 30vw;
 	position: relative;
 	border:none;
 	overflow:hidden;
-
   }
 
   
