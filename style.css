@@ -32,8 +32,11 @@
 	background-color: #7868e6;
 	position: fixed;
 	z-index: 12;
-	
   }
+  header img{
+	position: relative;
+	width: 60px;
+}
 
   section {
 	width: 100%;
@@ -50,8 +53,6 @@
 	font-family: Poppins;
 	font-weight: bold;
 	color: #3d3c3c;
-	/* border-style: solid;
-	border-color: #1b1b1b; */
   }
   p {
 	font-size: 2vw;
@@ -59,6 +60,7 @@
 	padding-left: 10vw;
 	padding-right: 10vw;
   }
+
   #menu li {
 	display: inline-block;
 	margin: 10px;
@@ -84,8 +86,6 @@
 	margin: auto;
 	overflow: hidden;
 	position: relative;
-	/* border-style: solid;
-	border-color: #da68d4; */
   }
   .container img{
 	width: 100%;
@@ -126,10 +126,15 @@
   }
   .container #btnlike{
 	width: 63%;
-	height: 30vw;
+	height: 10vw;
 	position: relative;
 	border:none;
 	overflow:hidden;
+  }
+  .container #qr{
+	  width: 40%;
+	  height: 15vw;
+	  position: relative;
   }
 
   
