@@ -39,5 +39,27 @@ photoSlide.addEventListener('transitionend', () => {
         counter = photoImg.length - counter;
         photoSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
     }
-
 })
+window.onload = Textarea
+function Textarea(){
+    tinymce.init({
+        selector: "#mytextarea",
+        plugins: "emoticons autoresize",
+        toolbar: "emoticons",
+        toolbar_location: "bottom",
+        menubar: false,
+        statusbar: false
+        
+      });
+      let textarea = document.querySelector('.textare');
+      textarea.addEventListener('keydown', autosize);
+      function autosize() {
+        let el = this;
+        setTimeout(function () {
+          el.style.cssText = 'height:auto; padding:0';
+          // for box-sizing other than "content-box" use:
+          // el.style.cssText = '-moz-box-sizing:content-box';
+          el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        }, 0);
+      }
+}
