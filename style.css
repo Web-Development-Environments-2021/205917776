@@ -63,7 +63,7 @@ h2 {
   font-weight: bold;
   color: #3d3c3c;
 }
-p {
+p , pre {
   font-size: 1.75vw;
   color: #1b1b1b;
   padding-left: 10vw;
