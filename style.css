@@ -73,20 +73,26 @@ p {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   }
-#menu li {
+#menu div {
   display: inline-block;
-  margin: 10px;
+  margin: 20px;
   text-decoration: none;
 }
-#menu li a {
+#menu div a {
+  display:inline-block;
+  text-align:center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.3em;
   color: cornsilk;
+  
 }
-#menu li a:hover {
-  font-weight: bold;
-  font-size: 20px;
+#menu div a:hover {
+  text-shadow: 0.6px 0.6px 0.5px cornsilk, 0 5px 10px black;
+  transition: .3s ease;
+  opacity: 1;
+  background-color: #7868e6;
 }
+
 .section #savta {
   padding-top: 20px;
   width: 20vw;
@@ -143,7 +149,12 @@ p {
   border:none;
   box-sizing: border-box;
   overflow:hidden
-
+}
+#mylike {
+  width: 174px;
+  height: 46px;
+  left: 1%;
+  position: relative;
 }
 .container #qr {
   width: 40%;
