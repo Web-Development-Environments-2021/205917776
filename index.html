@@ -5,13 +5,13 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <script src="https://cdn.tiny.cloud/1/t14ee2jcpgdwus1zy2ruj73jkdkl6z41rif07fch8ozyp2o1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" type="text/css" href="emoji.css"/>
 </head>
 
 <body>
   <header>
     <a href="">
-      <img src="img/haim.png" alt="">
+      <img id="haim_img" src="img/haim.png" alt="">
     </a>
     <div id="menu">
       <ul>
@@ -66,9 +66,7 @@
     <h1>Give me a like</h1>
     <div class="container">
       <iframe id="btnlike"
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdeandvarim&tabs&width=400&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-        scrolling="no" frameborder="0" allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdeandvarim&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"  scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </div>
   </section>
 
@@ -81,34 +79,48 @@
 
   <section id="spa" class="section">
     <h1>Q&A</h1>
-    <p>שלום אני סבתא של דרור או מוכרת בתור מכשפת המכשפות כמו שדרורילה אוהב לקרוא לי. תקופת הקורונה היית קשה כיוון שלא
-      ראיתי את ילדתי ונכדי במשך תקופה ארוכה. אני אוהבת מאוד להכין במיה עם הבת שלי ולשחק עם הנכד בטירה ואבירים. בעזרת
-      האתר מוטק'ה הכרתי אנשים נוספים לגילי אשר אוהבים לדבר ולהנות ביחד לדוגמא סבא בז'יק השזיף שהייתי מדברת איתו שעות
-      בטלפון על הזמנים עברו. כשהייתי צעירה ויפה התעסקתי באופנה והייתי דוגמנית הראשית אצל משה רגבי אופנה אבל עם הזמנים
-      נהנת להיות סבתא גאה.</p>
+    <h2>What are the major differences among Web 1.0, 2.0 and 3.0?</h2>
+    <h2>📖, ✍🏻 & 🕹️</h2>
+  </br>
+    <div class="grid">
+      <div>Web 1.0</div>
+      <div>Web 2.0</div>
+      <div>Web 3.0</div>
+      <div>The “readable” phrase of the World Wide Web with flat data</div>
+      <div>The “writable” phrase of the World Wide Web with interactive data</div>
+      <div>The “executable” phrase of Word Wide Web with dynamic applications, interactive services, and “machine-to-machine” interaction</div>
+      <div>Only limited interaction between sites and web users</div>
+      <div>Facilitates interaction between web users and sites, so it allows users to interact more freely with each other</div>
+      <div>A semantic web, improves web technologies in order to generate, share and connect content through search and analysis based on the ability to understand the meaning of words</div>
+      <div>Information portal where users passively receive information without being given the opportunity to post reviews, comments, and feedback</div>
+      <div>Encourages participation, collaboration, and information sharing. Applications are Youtube, Wiki, Facebook, and so on</div> 
+      <div>Computers can interpret information like humans and intelligently generate and distribute useful content tailored to the needs of users</div> 
+    </div>
   </section>
 
   <section id="contact" class="section">
     <h1>Contact Us</h1>
-    <div class="container">
+    <h2>👵 I would be more than happy to talk with you 👵</h2>
+    </br>
+    <form action="mailto:alkalayg@post.bgu.ac.il?subject=message from my website" method="post" enctype="text/plain" >
       <div class="contact-form">
         <div class="txtb">
           <label>Full Name :</label>
-          <input type="text" name="" value="" placeholder="Enter Your Name">
+          <input type="text" name="name" value="" placeholder="Enter Your Name" required>
         </div>
-
         <div class="txtb">
           <label>Email :</label>
-          <input type="email" name="" value="" placeholder="Enter Your Email">
+          <input type="email" name="email" value="" placeholder="Enter Your Email" required>
         </div>
-
         <div class="txtb">
           <label>Message :</label>
-          <textarea id="mytextarea"></textarea>
+          <div class="emojipicker-container">
+            <textarea name="message" id="main-textarea" required></textarea>
+          </div>
         </div>
-        <a class="btn">Send</a>
+          <input type="submit" class="btn" type="button" value="Send">
       </div>
-    </div>
+    </form>
   </section>
   </br>
   </br>
@@ -128,6 +140,7 @@
       $('#menu').toggle($(this).scrollTop() > 1000)
     });
   </script>
+  <script src="emoji.js"></script>
 </body>
 
 </html>

@@ -40,18 +40,14 @@ photoSlide.addEventListener('transitionend', () => {
         photoSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
     }
 })
+window.onload = sendEmail
+function sendEmail() {
+
+}
+
 window.onload = Textarea
 function Textarea(){
-    tinymce.init({
-        selector: "#mytextarea",
-        plugins: "emoticons autoresize",
-        toolbar: "emoticons",
-        toolbar_location: "bottom",
-        menubar: false,
-        statusbar: false
-        
-      });
-      let textarea = document.querySelector('.textare');
+      let textarea = document.querySelector('#main-textarea');
       textarea.addEventListener('keydown', autosize);
       function autosize() {
         let el = this;
