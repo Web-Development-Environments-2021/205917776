@@ -40,10 +40,7 @@ photoSlide.addEventListener('transitionend', () => {
         photoSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
     }
 })
-window.onload = sendEmail
-function sendEmail() {
 
-}
 
 window.onload = Textarea
 function Textarea(){
