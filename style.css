@@ -108,7 +108,7 @@ p , pre {
 }
 .container img {
   width: 100%;
-  height: 100%;
+  height: 55vh;
 }
 .photo-slide {
   display: flex;
@@ -224,11 +224,13 @@ p , pre {
 }
 .grid {
   display: grid;
-  grid-gap: 1px;
   grid-template-columns: repeat(3, 1fr);
   width: 50%;
   position: relative;
   left: 25%;
+  gap: 1px;
+  padding: 5px;
+  background-color: #e6e3e3;
 }
 .grid div:hover{
   background-color: #7868e6;
@@ -239,7 +241,4 @@ p , pre {
   opacity:1;
 }
 
-div > div {
-  padding: 10px;
-  background-color: #e6e3e3;
-}
+
